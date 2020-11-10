@@ -10,10 +10,6 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 @Service
 @Scope(SCOPE_PROTOTYPE)
 public class GreetingService {
-    public GreetingService() {
-        System.out.println("create greeting service!");
-    }
-
     private final Foo foo;
     private final Bar bar;
 

@@ -14,7 +14,17 @@ public class GreetingService {
         System.out.println("create greeting service!");
     }
 
+    private final Foo foo;
+    private final Bar bar;
+
+    public GreetingService(Foo foo, Bar bar) {
+        this.foo = foo;
+        this.bar = bar;
+    }
+
     String sayHi() {
+        foo.hi();
+        bar.hi();
         return "hello world";
     }
 }
